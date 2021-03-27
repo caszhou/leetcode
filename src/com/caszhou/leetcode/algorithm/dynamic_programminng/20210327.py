@@ -29,9 +29,6 @@ def one_zero_package_max_value(n: int, c: int):
 
         max_value = max(not_pick, pick)
 
-        if pick == max_value:
-            pick_set.add(n)
-
         return max_value
     else:
         return not_pick
