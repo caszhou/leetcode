@@ -8,7 +8,7 @@ def one_zero_package_max_value(n: int, c: int):
     """
     一共有N件物品，第i（i从1开始）件物品的重量为w[j]，价值为v[j]。在总重量不超过背包承载上限W的情况下，能够装入背包的最大价值是多少？
 
-    时间复杂度：O(2n)
+    时间复杂度：O(n)
 
     :param n: 第n个item
     :param c: pick number
