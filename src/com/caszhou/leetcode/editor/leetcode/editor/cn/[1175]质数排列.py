@@ -31,7 +31,7 @@
 
 # leetcode submit region begin(Prohibit modification and deletion)
 class Solution(object):
-    def numPrimeArrangements(self, n: int):
+    def numPrimeArrangements(self, n):
         """
         :type n: int
         :rtype: int
