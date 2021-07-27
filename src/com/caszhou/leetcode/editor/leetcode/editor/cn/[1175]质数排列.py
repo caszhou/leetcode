@@ -57,6 +57,3 @@ class Solution(object):
 
         return rest
 # leetcode submit region end(Prohibit modification and deletion)
-
-if __name__ == "__main__":
-    print(Solution().numPrimeArrangements(100))
