@@ -36,21 +36,22 @@ class Solution(object):
         :type n: int
         :rtype: int
         """
-        mark = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97]
-        num = 0
-        for m in mark:
-            if m <= n:
-                num = num + 1
+        if n == 1 or n == 2:
+            return 1
+
+        val = 1
+        for i in range(3, n + 1):
+            for j in range(2, i):
+                k = i % j
+                if k == 0:
+                    val += 1
+                    break
 
         rest = 1
-        for i in range(1, num + 1):
-            if i > 1000000007:
-                rest = rest % 1000000007
+        for i in range(1, val + 1):
             rest = rest * i
 
-        for i in range(1, n - num + 1):
-            if i > 1000000007:
-                rest = rest % 1000000007
+        for i in range(1, n - val + 1):
             rest = rest * i
 
         rest = rest % 1000000007
